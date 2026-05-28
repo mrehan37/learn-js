@@ -1,0 +1,17 @@
+#button-1 {
+  background-color: lightgreen;
+  border-radius: 9px;
+  padding: 7px 10px;
+  border: 0;
+}
+
+.button {
+  text-transform: uppercase;
+  border-radius: 9px;
+  padding: 5px 40px;
+  border: 2px solid black;
+}
+
+h1 {
+  font-size: 55px;
+}
