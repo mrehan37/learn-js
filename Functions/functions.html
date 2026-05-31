@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let age = 21;
+      // function printAge() {
+      //   console.log(`Your are is ${age}`);
+      // }
+      // printAge();
+      // age = 76;
+      // printAge();
+
+      // age = 87;
+      // printAge();
+
+      // Learning Functions return
+      // function generateRandomMove() {
+      //   let random = Math.random();
+      //   let randomMove = random * 3;
+
+      //   return randomMove;
+      // }
+
+      // let functionResult = generateRandomMove();
+      // console.log(functionResult);
+
+      // function getDrivingStatus() {
+      //   let age;
+
+      //   if (age === undefined) {
+      //     return "Error in your age";
+      //   }
+
+      //   if (age > 18) {
+      //     return "You can Drive";
+      //   } else {
+      //     return "Darr nai lagta teray ko? marna ha?";
+      //   }
+      // }
+
+      // let drivingStatus = getDrivingStatus();
+
+      // console.log(drivingStatus);
+
+      //   function sum(a, b) {
+      //     let sum = a + b;
+      //     return sum;
+      //   }
+
+      //   console.log(sum(43, 54));
+      //   console.log(sum(43, 56));
+      //   console.log(sum(43, 55));
+      //   console.log(sum(48, 57));
+      //   console.log(sum(452, 52));
+      // function greeting(name) {
+      //   console.log(`Hello ${name}`);
+      // }
+      // greeting("Rehan");
+      // greeting("Haroon");
+
+      // function isOdd(number) {
+      //   let rem = number % 2;
+      //   let isOdd = rem == 1 ? "Your Number is Odd" : "Your number is even";
+      //   return isOdd;
+      // }
+
+      // console.log(isOdd(45));
+      // console.log(isOdd(-5));
+      // console.log(isOdd(4));
+      // console.log(isOdd(6));
+      // console.log(isOdd(9));
+
+      function largerNumber(num1, num2) {
+        let result =
+          num1 > num2
+            ? `${num1} is greater than ${num2}`
+            : `${num2} is greater than ${num1}`;
+        return result;
+      }
+
+      console.log(largerNumber(2, 6));
+      console.log(largerNumber(9, 5));
+      console.log(largerNumber(2, 7));
+      console.log(largerNumber(2, 2));
+      console.log(largerNumber(2, 3));
+
+      function toFahrenheit(celsiusValue) {
+        return (9 / 5) * celsiusValue + 32;
+      }
+
+      console.log(toFahrenheit(38));
+      console.log(toFahrenheit(100));
+    </script>
+  </body>
+</html>

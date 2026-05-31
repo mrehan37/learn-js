@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date and DOM</title>
+  </head>
+  <body>
+    <div class="my-div">
+      <p class="para">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro maxime
+        amet cum eaque quisquam distinctio sed consequuntur ipsa voluptatum!
+        Repudiandae voluptatibus suscipit ipsa! Dolores soluta impedit magnam
+        officiis nemo architecto!
+      </p>
+      <button class="xbutton">Click me</button>
+    </div>
+    <script>
+      // let myDate = new Date();
+
+      // console.log(myDate);
+      // console.log(myDate.getTime());
+      // console.log(myDate.getDate());
+      // console.log(myDate.getDay());
+      // console.log(myDate.getFullYear());
+      // console.log(myDate.getHours());
+      // console.log(myDate.getMinutes());
+      // console.log(myDate.getSeconds());
+
+      document.querySelector(".para").innerText = "This is rehan here";
+      let button = document.createElement("Button");
+      button.innerText = "Help me";
+      document.querySelector(".my-div").appendChild(button);
+      document.querySelector(".my-div").removeChild(button);
+    </script>
+  </body>
+</html>

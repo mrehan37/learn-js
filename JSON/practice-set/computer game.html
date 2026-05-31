@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Game</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <h1>Ball Ball Stump Game</h1>
+    <div class="choice-container">
+      <button
+        class="choice-button"
+        onclick="
+          computerChoice = generateComputerChoice();
+          resultMsg = getResult('Bat', computerChoice);
+          showResult('Bat', computerChoice, resultMsg);
+        "
+      >
+        <!-- bat -->
+        <img
+          src="https://img.icons8.com/external-icongeek26-flat-icongeek26/64/external-cricket-bat-sports-and-games-icongeek26-flat-icongeek26.png"
+          alt="external-cricket-bat-sports-and-games-icongeek26-flat-icongeek26"
+        />
+      </button>
+      <button
+        class="choice-button ball"
+        onclick="
+          computerChoice = generateComputerChoice();
+          resultMsg = getResult('Ball', computerChoice);
+          showResult('Ball', computerChoice, resultMsg);
+        "
+      >
+        <!-- ball -->
+        <img
+          src="https://img.icons8.com/plasticine/100/cricket-ball--v1.png"
+          alt="cricket-ball--v1"
+        />
+      </button>
+      <button
+        class="choice-button"
+        onclick="
+          computerChoice = generateComputerChoice();
+          resultMsg = getResult('Stump', computerChoice);
+          showResult('Stump', computerChoice, resultMsg);
+        "
+      >
+        <!-- stump -->
+        <img
+          src="https://img.icons8.com/external-dual-tone-amoghdesign/100/external-cricket-sports-and-games-vol-01-dual-tone-amoghdesign.png"
+          alt="external-cricket-sports-and-games-vol-01-dual-tone-amoghdesign"
+        />
+      </button>
+    </div>
+    <button
+      class="reset-btn"
+      onclick="
+        localStorage.clear();
+        resetScore();
+      "
+    >
+      Reset
+    </button>
+
+    <h3 class="user-move"></h3>
+    <h3 class="computer-move"></h3>
+    <h3 class="result"></h3>
+    <h3 class="score"></h3>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

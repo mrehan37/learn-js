@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="calculator">
+      <h1>Calculator</h1>
+      <h5>Dated 30-05-2026</h5>
+      <input type="text" id="display" readonly />
+      <div class="button-container">
+        <div class="num-pad">
+          <button
+            onclick="
+              currentDisplay = '';
+              document.querySelector('#display').value = currentDisplay;
+            "
+          >
+            C
+          </button>
+          <button
+            onclick="
+              currentDisplay += 1;
+              document.querySelector('#display').value = currentDisplay;
+            "
+          >
+            1
+          </button>
+          <button
+            onclick="
+              currentDisplay += 2;
+              document.querySelector('#display').value = currentDisplay;
+            "
+          >
+            2
+          </button>
+          <button
+            onclick="
+              currentDisplay += 3;
+              document.querySelector('#display').value = currentDisplay;
+            "
+          >
+            3
+          </button>
+          <button
+            onclick="
+              currentDisplay += 4;
+              document.querySelector('#display').value = currentDisplay;
+            "
+          >
+            4
+          </button>
+          <button
+            onclick="
+              currentDisplay += 5;
+              document.querySelector('#display').value = currentDisplay;
+            "
+          >
+            5
+          </button>
+          <button
+            onclick="
+              currentDisplay += 6;
+              document.querySelector('#display').value = currentDisplay;
+            "
+          >
+            6
+          </button>
+          <button
+            onclick="
+              currentDisplay += 7;
+              document.querySelector('#display').value = currentDisplay;
+            "
+          >
+            7
+          </button>
+          <button
+            onclick="
+              currentDisplay += 8;
+              document.querySelector('#display').value = currentDisplay;
+            "
+          >
+            8
+          </button>
+          <button
+            onclick="
+              currentDisplay += 9;
+              document.querySelector('#display').value = currentDisplay;
+            "
+          >
+            9
+          </button>
+          </button>
+          <button
+            onclick="
+              currentDisplay += 0;
+              document.querySelector('#display').value = currentDisplay;
+            "
+          >
+            0
+          </button>
+          <button
+            onclick="
+              currentDisplay += '.';
+              document.querySelector('#display').value = currentDisplay;
+            "
+          >
+            .
+          </button>
+        </div>
+        <div class="functions">
+          <button onclick="currentDisplay = currentDisplay + '+'; document.querySelector('#display').value = currentDisplay">+</button
+          ><button onclick="currentDisplay = currentDisplay + '-'; document.querySelector('#display').value = currentDisplay">-</button
+          ><button onclick="currentDisplay = currentDisplay + '*'; document.querySelector('#display').value = currentDisplay">x</button
+          ><button onclick="currentDisplay = currentDisplay + '/'; document.querySelector('#display').value = currentDisplay">/</button
+          ><button
+            onclick="
+              currentDisplay = eval(currentDisplay);
+              document.querySelector('#display').value = currentDisplay;
+            "
+            class="equal-btn"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      let currentDisplay = "0";
+      document.querySelector("#display").value = currentDisplay;
+    </script>
+  </body>
+</html>

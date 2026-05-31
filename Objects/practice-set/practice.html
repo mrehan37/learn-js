@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice - Objects</title>
+  </head>
+  <body>
+    <script>
+      let product = {
+        size: "s",
+        category: "Jeans",
+        color: "blue",
+        deliveryTime: "Same-day",
+      };
+      console.log(product);
+
+      let copyProduct = product;
+      console.log(copyProduct);
+
+      copyProduct.category = "tambo";
+      console.log(copyProduct);
+
+      console.log(product["deliveryTime"]);
+
+      let newObject = {
+        message: "Good Job",
+        status: "Completed",
+      };
+
+      console.log(newObject);
+
+      // destructing practice
+      let { message, status } = newObject;
+
+      console.log(message);
+      console.log(status);
+
+      console.clear();
+
+      let product1 = {
+        size: "s",
+        category: "Jeans",
+        color: "blue",
+        deliveryTime: "Same-day",
+      };
+
+      let product2 = {
+        size: "s",
+        category: "Jeans",
+        color: "blfue",
+        deliveryTime: "Same-day",
+      };
+
+      function isIdenticalProduct(prod1, prod2) {
+        if (typeof prod1 !== "object" || typeof prod2 !== "object") {
+          console.warn("Parameter passed was not an object");
+          return "Check the Product info";
+        }
+
+        if (prod1 == prod2) {
+          return true;
+        }
+
+        if (
+          prod1.name === prod2.name &&
+          prod1.category === prod2.category &&
+          prod1.color === prod2.color
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      // console.log(isIdenticalProduct(product1, product2));
+      console.log(isIdenticalProduct(product1, ""));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      // let product = {
+      //   company: 'Mango',
+      //   price: 'PKR 232.00',
+      //   itemName: 'Cotton Striped Shirt',
+      //   'test-name': 'Rehan',
+      // };
+
+      // console.log(product);
+      // console.log(product.itemName);
+      // console.log(product.company);
+      // console.log(product.price);
+
+      // console.log(product['test-name']);
+
+      // delete product.company;
+      // console.log(product);
+
+      // let product = {
+      //   company: 'Mango',
+      //   price: 'PKR 232.00',
+      //   itemName: 'Cotton Striped Shirt',
+      //   'test-name': 'Rehan',
+      //   displayPrice: function () {
+      //     console.log(`Price of the product is PKR ${this.price}`);
+      //   },
+      // };
+
+      // product.displayPrice();
+
+      //Auto-Boxing
+
+      // console.log("this is rehan here".toUpperCase());
+      // console.log("this is rehan here".replace("rehan", "Haroon"));
+      // console.log("this is rehan here".toLocaleUpperCase());
+
+      // let a = 5;
+      // let b = a;
+      // console.log(`a = ${a}, b = ${b}`);
+      // a = 8;
+      // console.log(`a = ${a}, b = ${b}`);
+
+      // let x = { num: 5 };
+      // let y = x;
+      // console.log(x.num, y.num);
+      // x.num = 8;
+      // console.log(x.num, y.num);
+
+      let product = {
+        company: "Mango",
+        price: "PKR 232.00",
+        itemName: "Cotton Striped Shirt",
+        "test-name": "Rehan",
+      };
+
+      // let company = product.company;
+      // console.log(`${company}`);
+
+      let { company, price } = product;
+      console.log(`${company}`);
+      console.log(`${price}`);
+    </script>
+  </body>
+</html>
